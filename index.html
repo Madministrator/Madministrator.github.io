@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Evan's Portfolio</title>
+	<!--Link to my personalized CSS - items that were not covered by the Bootstrap CSS-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--Link to the Bootstrap Slate theme CSS - TODO: Contemplate downloading a local copy - in addition, swithing out this CSS link 
+	for another CSS link will change the theme but still provide the same functionality? Stretch goal if possible (A drop down inside the navbar).-->
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-ywjdn7N8uoxzIfGl7jlEBlqw2BNicOSzZDgo7A2ffvbM24Ct9plRp7KwtaIqZ33j" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container-fluid">
+ 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+ 			<!--My name on the left side of the navbar, returns to start page-->
+ 			<h6 class="navbar-brand">Evan Vander Hoeven</h6>
+ 			<!--A button that only appears when the screen is compressed (like mobile). It toggles the appearance of the navbar so that it expands when the button is pressed.-->
+ 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+      		</button>
+ 			<!--All the other components of the navbar || links to the rest of the site content-->
+ 			<div class="collapse navbar-collapse" id="navigation">
+ 				<ul class="nav navbar-nav">
+ 					<li class="nav-item">
+ 						<a class="nav-link" data-toggle="tab" href="#home">Home</a>
+ 					</li>
+ 					<li class="nav-item">
+ 						<a class="nav-link" data-toggle="tab" href="#resume">My Resume</a>
+ 					</li>
+ 					<li class="nav-item">
+ 						<a class="nav-link" data-toggle="tab" href="#projects">My Projects</a>
+ 					</li>
+ 					<li class="nav-item dropdown">
+ 						<span id="contactDropdown" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact Me</span>
+ 						<div class="dropdown-menu" aria-labelledby="contactDropdown">
+							<p class="dropdown-item"><strong>Cell Phone:</strong> 651-324-9547</p>
+							<p class="dropdown-item"><strong>Email:</strong> vhevan@aol.com</p>
+ 						</div>
+ 					</li>
+ 				</ul>
+ 			</div>
+ 		</nav>
+ 		<div class="tab-content">
+			<div class="tab-pane active" id="home">
+				<div class="jumbotron">
+					<img id="portrait" src="images/myPhoto.jpg" alt="An image of Evan Vander Hoeven">
+					<div id="jumbotronText">
+						<h1>My name is Evan Vander Hoeven</h1>
+						<h2>Welcome to my portfolio!</h2>
+						<p class="lead">I'm a student at the University of Wisconsin Stout, working towards a bachelor's of science in computer science with a concentration in mobile applications development.</p>
+						<p class="lead">I'm hard-working, self driven, and always ready to learn. My natural curiosity makes me a great asset to any software development team.</p>
+					</div>
+				</div><!--End jumbotron div-->
+				<div id="aboutMe">
+					<h1>About Me:</h1>
+					<h3><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#languageList" aria-expanded="false" aria-controls="languageList">How many languages do I know?</button></h3>
+					<div class="collapse" id="languageList">
+						<div class="card card-body">
+							<h6>I have proficiency with the following languages:</h6>
+							<ul>
+								<li>Java</li>
+								<li>Swift</li>
+								<li>C++</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>PHP</li>
+							</ul>
+							<h6>I have experience with the following languages:</h6>
+							<ul>
+								<li>Python</li>
+								<li>SQL</li>
+								<li>JavaScript</li>
+							</ul>
+							<h6>In addition to languages, I have some experience with the following concepts:</h6>
+							<ul>
+								<li>Cybersecurity</li>
+								<li>Encryption Protocols</li>
+								<li>Machine Virtualization</li>
+								<li>Networking Tools</li>
+								<li>Linux / Unix Commands</li>
+							</ul>
+							<h5>Naturally, I am always ready to learn more and add to this list!</h5>
+						</div>
+					</div><!--End div id="languageList"-->
+					<p>Again, welcome to my portfolio! Feel free to explore this website, which contains my resume, a description of some of my side-projects, and links to some of my important profiles on the internet. It's all worth exploring if you want to get to know me.<br/><br/>To give a little personal history, I'm from Eagan, Minnesota where I went to Eagan High School. While in High School, I took AP Computer Science (Java) and Mobile Applications Development (Swift), which were very influential classes on my choice of degree at Stout. I was fortunate to have a fantastic teacher who brought out my natural talent for developing source code. When I wasn't working in school or my part-time job, I worked to become an Eagle Scout, a hard-earned achievement that I am very proud of. To me, being an Eagle Scout means that I am a natural born leader who knows how to set a goal and see it through, something that I'm sure will be invaluable at any company.<br/><br/>Currently, I am seeking an internship in the software development field. If you think that I would be a good fit at your company, feel free to contact me with the information provided below!</p>
+				</div><!--End div id="aboutMe"-->
+				<div id="contactInfo">
+					<h2>Contact Information:</h2>
+					<h3>Cell Phone: <small class="text-muted">651-324-9547</small></h3>
+					<h3>Email: <small class="text-muted">vhevan@aol.com</small></h3>
+					<h3>Connect with me on <a href="https://www.linkedin.com/in/evan-vander-hoeven-6906b4174/" target="_blank">LinkedIn</a>!</h3>
+					<h3>Check out my <a href="https://github.com/Madministrator" target="_blank">GitHub</a> profile!</h3>
+				</div><!--End div id="contactInfo"-->
+			</div><!--End div id="home"-->
+			<div class="tab-pane fade" id="resume">
+				<h1>My Resume</h1>
+				<h6 class="lead">You can also download a copy of my resume here:</h6>
+				<form method="get" action="resume/Resume_Evan_Vander_Hoeven.docx" target="_blank">
+					<button class="btn btn-outline-info" type="submit" style="float: left; margin-right: 5%;">Word Document</button>
+				</form>
+				<form method="get" action="resume/Resume_Evan_Vander_Hoeven.pdf" target="_blank">
+					<button class="btn btn-outline-info" type="submit">PDF</button>
+				</form>
+				<br/><!--Just some whitespace-->
+				<h4>Objective</h4>
+				<p>I am a self-motivated Junior at the University of Wisconsin Stout looking for a co-op or internship where I can directly apply my skills.</p>
+				<h1>Education</h1>
+				<h6 class="lead">September 2017 - Current</h6>
+				<h5><strong>University of Wisconsin Stout, Menomonie WI</strong></h5>
+				<h3>Bachelor of Science Degree in Computer Science</h3>
+				<ul>
+					<li>Concentration in Mobile Application Development</li>
+					<li>Minor in Mathematics</li>
+					<li>Expected graduation date: December 2020</li>
+					<li>Current GPA: 3.824</li>
+					<li>Enrolled in the Honors College Program</li>
+					<li>Vice President of the Information Security Professionals (ISP) Club</li>
+					<li>Employed as a Student Instructor (SI) for the Mathematics, Statistics and Computer Science Department</li>
+				</ul>
+				<h5>Relevant Courses:</h5>
+				<ul>
+					<li>Computer Science 1 &amp; 2</li>
+					<li>Calculus and Analytic Geometry 1 &amp; 2</li>
+					<li>Cybertechnology Ethics</li>
+					<li>Data Structures</li>
+					<li>Web and Internet Programming</li>
+					<li>Database Systems</li>
+					<li>Discrete Mathematics</li>
+					<li>Human Computer Interface (HCI)</li>
+					<li>Software Engineering Principles</li>
+					<li>Algorithm Design and Implementation</li>
+				</ul>
+				<br/> <!--Add some whitespace-->
+				<h1>Previous Job Experience</h1>
+				<h6 class="lead">May 2015 - Current</h6>
+				<h5><strong>Target Corporation, Eagan</strong></h5>
+				<h3>General Merchandise Expert <small class="text-muted">Formerly known as Sales Floor Team Member</small></h3>
+				<ul>
+					<li>Responsible for:</li>
+					<ul>
+						<li>General sales floor duties</li>
+						<li>Electronics</li>
+						<li>Back Room</li>
+						<li>Guest Service Desk</li>
+						<li>Self-Checkout Management</li>
+						<li>Flexible Fulfilment</li>
+						<li>Other responsibilities as needed</li>
+					</ul>
+					<li>Trusted with access to secure areas of the store.</li>
+					<li>Copies of my last performance review are available on request.</li>
+				</ul>
+				<br/> <!--Add some whitespace-->
+				<h1>Other Experience</h1>
+				<h3>Eagle Scout</h3>
+				<ul>
+					<li>Joined the Boy Scouts of America on March 29, 2010</li>
+					<li>Achieved rank of Eagle Scout October 18th, 2016</li>
+					<li>Brotherhood Member of the Order of the Arrow, BSA National Honors Society</li>
+					<li>Recieved National Youth Leadership Training (NYLT)</li>
+					<li>Held several positions of responsibility, including but not limited to Senior Patrol Leader.</li>
+				</ul>
+			</div><!--End div id="resume"-->
+			<div class="tab-pane fade" id="projects">
+				<h1 class="text-center">View the source code for several of my projects at my <a href="https://github.com/Madministrator" target="_blank">GitHub</a> profile.</h1>
+				<br/><!--Adds whitespace-->
+				<div class="card bg-primary projectCard" id="portfolioCard">
+					<div class="card-header">
+						<h4>This website is one of my projects.</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text" id="portfolioDescription">This website is an example of my handiwork. Developed with the <a class="card-link" href="https://getbootstrap.com/" target="_blank">Bootstrap framework</a>, I constructed this entire portfolio for the purpose of demonstrating my skills as a programmer. The HTML is entirely written from scratch to create the website that you see in front of you. The CSS and Javascript is primarily Bootstrap, but I also suppliment the framework with my own code to create a more complete and user-friendly feel. The entire website scales to fit your screen, and is mobile friendly.</p>
+						<h6 class="card-text text-muted">Languages: HTML5, CSS<!--PHP pending?--></h6>
+						<p>Feel free to peruse my source code with CTRL+U.</p>
+					</div>
+				</div><!--End div id="portfolioCard"-->
+				<div class="card bg-primary projectCard" id="bandAuditionCard">
+					<div class="card-header"><h4>Band Audition app for iPad</h4></div>
+					<div class="card-body">
+						<p class="card-text" id="bandAuditionDescription">This project was my largest coding project from my High School career. It was developed for the Eagan High School band director as a way to conduct his band auditions via his iPad. It enabled him to rank all the different players for three different high school bands, accounting for every different kind of instrument. The app would store all of the audition information and use a customized sorting algorithm to rank students based on their performance. In addition, all the information gathered via this app could be packaged into a .csv file and emailed to one of the other band directors, allowing them to collaborate in selecting students for the EHS bands. Taking six months of in-class work, I developed this project with one other partner in a development style that mixed elements of both waterfall and agile development to better fit the classroom setting.</p>
+						<div id="bandAuditionCarousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#bandAuditionCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#bandAuditionCarousel" data-slide-to="1"></li>
+								<li data-target="#bandAuditionCarousel" data-slide-to="2"></li>
+								<li data-target="#bandAuditionCarousel" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<a href="images/BandAuditionApp_CodeSample.PNG" target="_blank"><img class="first-slide" src="images/BandAuditionApp_CodeSample.PNG" alt="Some of the code from the project"></a>
+								</div>
+								<div class="carousel-item">
+									<a href="images/BandAuditionAppScreenshot1.png" target="_blank"><img class="second-slide" src="images/BandAuditionAppScreenshot1.png" alt="One of the data entry views"></a>
+								</div>
+								<div class="carousel-item">
+									<a href="images/BandAuditionAppScreenshot2.png" target="_blank"><img class="third-slide" src="images/BandAuditionAppScreenshot2.png" alt="One of the data entry views"></a>
+								</div>
+								<div class="carousel-item">
+									<a href="images/BandAuditionAppScreenshot3.png" target="_blank"><img class="fourth-slide" src="images/BandAuditionAppScreenshot3.png" alt="Selecting the instrument for an audition"></a>
+								</div>
+							</div><!--End class="div carousel-inner"-->
+							<a class="carousel-control-prev" href="#bandAuditionCarousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#bandAuditionCarousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div><!--End div class="carousel slide"-->
+						<h6 class="card-text text-muted">Language: Swift 3.1</h6>
+						<p><a class="card-link" href="https://github.com/Madministrator/Band-Audition-App" target="_blank">Link to the GitHub repository</a></p>
+					</div>
+				</div><!--End div id="bandAuditionCard"-->
+				<div class="card bg-primary projectCard" id="rsaCard">
+					<div class="card-header">
+						<h4>Exploration of the RSA encryption</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">The RSA encryption system is a very popular encryption system because it allows two computers who have never communicated with each other before to make a secure, encrypted connection. Based in number theory, the RSA uses the concepts of modular exponentiation and properties of prime numbers to turn your information into extremely large integers. To give an example of how large these numbers are, an RSA 1024 bit encryption will create numbers on the power of 10<sup>309</sup>, which is one followed by over three hundred zeros. I created this program not to actually encrypt data (my project should not be used to encrypt any data for security purposes) but rather to explore the concepts of prime cryptography as explained <a href="https://github.com/Madministrator/Basic_RSA_Encryption/blob/master/Information/math_of_RSA.pdf" target="_blank">here</a>.</p>
+						<h6 class="card-text text-muted" style="display: block;">Language: Java</h6>
+						<p><a class="card-link" href="https://github.com/Madministrator/Basic_RSA_Encryption" target="_blank">Link to the GitHub repository</a></p>
+					</div>
+				</div><!--End div id="rsaCard"-->
+				<div class="card bg-primary projectCard" id="emergenceTheoryCard">
+					<div class="card-header">
+						<h4>Emergence Theory Proof of Concept</h4>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Emergence theory is the scientific concept that a large group of objects is greater then the sum of its parts. For example: a single water molecule doesn't make a floor slippery, but a large quantity of water molecules will make a slippery puddle. Being slippery is a qualitative property of water that only occured when a lot of water molecules came together. In other words, a new property <strong>emerged</strong>. I first learned the basic principles of emergence theory in a <a href="https://www.youtube.com/watch?v=16W7c0mb-rE" target="_blank">Kurzgesagt video on YouTube</a>. Over a weekend, I decided to model the emergence theory concept on a computer using random number generators to replicate a rudimentary version of ant colony pheromone behaviors.<br/> started with a <a class="card-link" href="https://github.com/Madministrator/Emergence_Theory/blob/master/Emergence_Theory/Emergence_Explained.txt" target="_blank">conceptual design</a> and moved onto the actual code in a simple console application made with Microsoft Visual studio. This project was interesting to me not because of the complexity of the task, but because of the application of a mathematical concept.</p>
+						<a href="images/emergenceDemo.png" target="_blank"><img class="card-img" src="images/emergenceDemo.png"></a>
+						<h6 class="card-text text-muted" style="display: block;">Language: C++</h6>
+						<p><a class="card-link" href="https://github.com/Madministrator/Emergence_Theory" target="_blank">Link to the GitHub repository</a></p>
+					</div>
+				</div><!--End div id="emergenceTheoryCard"-->
+			</div><!--End Div id="projects"-->
+		</div><!--End div class="tab-content"-->
+	</div><!--End div class="container-fluid"-->
+	
+	<!--Having the JavaScript files at the end of the file will cause the page as a whole to load faster.-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
