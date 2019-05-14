@@ -27,14 +27,6 @@ body{
 	max-height: 1026px;
 }
 
-
-/*
-	List of items that need to change based on screen size:
-		- the cards of the projects screen
-		- the carousel and description of the band audition app
-		- Maybe font sizes? That should be something I can handle with bootstrap...
-*/
-
 /*
 	FLAG: Begin responsive resizing
 	Extra small devices such as portrait-oriented mobile phones (less than 576px wide)
@@ -80,22 +72,11 @@ body{
 	margin-right: auto;
 }
 
-/*
-	resizeTest is so that I can see which CSS elements are being applied at a time.
-	for now, there are no HTML elements that contain the class="resizeTest"
-*/
-.resizeTest{
-	color: red;
-}
-
 /*Small devices such as landscape-oriented mobile phones (576px and up)*/
 @media (min-width: 576px) {
 	/*No significant changes between this size and previous, 
 	this is here because the size is a bootsrap standard, 
 	and I want to make sure my code works with theirs if needed.*/
-	.resizeTest{
-		color: orange;
-	}
 }
 
 /*Medium devices such as tablets (768px and up)*/
@@ -127,7 +108,7 @@ body{
 		width: 45%;
 	}
 	
-	#emergenceTheoryCard img{
+	#emergenceTheoryCard img, #steganographyCard img{
 		max-width: 45%;
 		margin-left: 4%;
 		margin-right: auto;
@@ -135,13 +116,9 @@ body{
 		display: inline-block;
 	}
 	
-	#emergenceTheoryCard .card-text{
+	#emergenceTheoryCard .card-text, #steganographyCard .card-text{
 		display: inline-block;
 		max-width: 50%;
-	}
-	
-	.resizeTest{
-		color: yellow;
 	}
 }
 
@@ -153,33 +130,13 @@ body{
 		margin: 0 2.2% 15px;
 	}
 	
-	#portfolioCard{
-		width: 30%;
-	}
-	
-	#bandAuditionCard{
-		width: 60%;
-	}
-	
 	#bandAuditionCarousel{
 		vertical-align: top;
 	}
 	
-	#rsaCard{
-		width: 30%;
-	}
-	
-	#emergenceTheoryCard{
-		width: 60%;
-	}
-	
-	#emergenceTheoryCard img{
+	#emergenceTheoryCard img, #steganographyCard img{
 		max-height: 300px;
 		width: auto;
-	}
-	
-	.resizeTest{
-		color: lightgreen;
 	}
 }
 
@@ -190,6 +147,4 @@ body{
 		width: 51%;
 		margin-right: 3%;
 	}
-	
-	.resizeTest{color: green;}
 }
