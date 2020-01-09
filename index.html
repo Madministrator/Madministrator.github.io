@@ -217,6 +217,42 @@
 						</div><!--End div id="steganographyCard"-->
 					</div>
 					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="card bg-primary projectCard" id="SpaceInvadersCloneCard">
+							<div class="card-header"><h4>Space Invaders Clone for IOS</h4></div>
+							<div class="card-body">
+								<p class="card-text" id="spaceInvadersDescription">For UW-Stout's IOS Programming class, I made a clone of the original space invaders game as an IOS app. This particular class project was not a group project, I wrote all of the code for the application and tested it thoroughly myself. Given only a short amount of time to write the application, and only having access to a Mac computer in a computer lab, I didn't get to add all the features that I would have liked. If I could have added more to the application, I would have added the barriers at the bottom of the game, added sprites to the bullets, allowed a UFO to fly across the top of the game for bonus points, and other features to better mimic the original game. <br/><br/>The game in its current state is playable, and does provide a challenge as you play it for longer periods of time. The interesting part of the development process was that I chose to use <a href="https://developer.apple.com/documentation/spritekit" target="_blank">SpriteKit</a>, which is a library that I had never used before. SpriteKit is how I draw everything on the screen, and it handles the event of two items (such as bullets) contacting each other. The use of SpriteKit simplified the project immensely, allowing me to focus on the game's style.</p>
+								<div id="si_carousel" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#si_carousel" data-slide-to="0" class="active"></li>
+										<li data-target="#si_carousel" data-slide-to="1"></li>
+										<li data-target="#si_carousel" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a href="images/SI_MainMenu.png" target="_blank"><img class="first-slide" src="images/SI_MainMenu.png" alt="The main menu of the application."></a>
+										</div>
+										<div class="carousel-item">
+											<a href="images/SI_GamePlay.png" target="_blank"><img class="second-slide" src="images/SI_GamePlay.png" alt="A screenshot of the gameplay."></a>
+										</div>
+										<div class="carousel-item">
+											<a href="images/SI_GameOver.png" target="_blank"><img class="third-slide" src="images/SI_GameOver.png" alt="The game over scene of the game once you loose."></a>
+										</div>
+									</div><!--End class="carousel-inner"-->
+									<a class="carousel-control-prev" href="#si_carousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#si_carousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div><!--End div id="si_carousel-->
+								<h6 class="card-text text-muted">Language: Swift 5</h6>
+								<p><a class="card-link" href="https://github.com/Madministrator/SpaceInvadersClone" target="_blank">Link to the GiHub repository</a></p>
+							</div>
+						</div><!--End div id="SpaceInvadersCloneCard-->
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12">
 						<div class="card bg-primary projectCard" id="wifiHeatMapCard">
 							<div class="card-header"><h4>Wi-Fi Heatmap for Android</h4></div>
 							<div class="card-body">
@@ -300,19 +336,7 @@
 							</div>
 						</div><!--End div id="bandAuditionCard"-->
 					</div>
-					<div class="col-xl-5 col-lg-4 col-md-12">
-						<div class="card bg-primary projectCard" id="rsaCard">
-							<div class="card-header">
-								<h4>Exploration of the RSA encryption</h4>
-							</div>
-							<div class="card-body">
-								<p class="card-text">The RSA encryption system is a very popular encryption system because it allows two computers who have never communicated with each other before to make a secure, encrypted connection. Based in number theory, the RSA uses the concepts of modular exponentiation and properties of prime numbers to turn your information into extremely large integers. To give an example of how large these numbers are, an RSA 1024 bit encryption will create numbers on the power of 10<sup>309</sup>, which is one followed by over three hundred zeros. I created this program not to actually encrypt data (my project should not be used to encrypt any data for security purposes) but rather to explore the concepts of prime cryptography as explained <a href="https://github.com/Madministrator/Basic_RSA_Encryption/blob/master/Information/math_of_RSA.pdf" target="_blank">here</a>.</p>
-								<h6 class="card-text text-muted" style="display: block;">Language: Java</h6>
-								<p><a class="card-link" href="https://github.com/Madministrator/Basic_RSA_Encryption" target="_blank">Link to the GitHub repository</a></p>
-							</div>
-						</div><!--End div id="rsaCard"-->
-					</div>
-					<div class="col-xl-7 col-lg-8 col-md-12">
+					<div class="col-xl-6 col-lg-6 col-md-12">
 						<div class="card bg-primary projectCard" id="emergenceTheoryCard">
 							<div class="card-header">
 								<h4>Emergence Theory Proof of Concept</h4>
@@ -324,6 +348,18 @@
 								<p><a class="card-link" href="https://github.com/Madministrator/Emergence_Theory" target="_blank">Link to the GitHub repository</a></p>
 							</div>
 						</div><!--End div id="emergenceTheoryCard"-->
+					</div>
+					<div class="col-xl-5 col-lg-4 col-md-12">
+						<div class="card bg-primary projectCard" id="rsaCard">
+							<div class="card-header">
+								<h4>Exploration of the RSA encryption</h4>
+							</div>
+							<div class="card-body">
+								<p class="card-text">The RSA encryption system is a very popular encryption system because it allows two computers who have never communicated with each other before to make a secure, encrypted connection. Based in number theory, the RSA uses the concepts of modular exponentiation and properties of prime numbers to turn your information into extremely large integers. To give an example of how large these numbers are, an RSA 1024 bit encryption will create numbers on the power of 10<sup>309</sup>, which is one followed by over three hundred zeros. I created this program not to actually encrypt data (my project should not be used to encrypt any data for security purposes) but rather to explore the concepts of prime cryptography as explained <a href="https://github.com/Madministrator/Basic_RSA_Encryption/blob/master/Information/math_of_RSA.pdf" target="_blank">here</a>.</p>
+								<h6 class="card-text text-muted" style="display: block;">Language: Java</h6>
+								<p><a class="card-link" href="https://github.com/Madministrator/Basic_RSA_Encryption" target="_blank">Link to the GitHub repository</a></p>
+							</div>
+						</div><!--End div id="rsaCard"-->
 					</div>
 				</div> <!--End div class="row"-->
 			</div><!--End Div id="projects"-->
