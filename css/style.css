@@ -22,7 +22,7 @@ body{
 	height: 100%;
 }
 
-#bandAuditionCarousel, #wifiHeatMapCarousel{
+#bandAuditionCarousel, #wifiHeatMapCarousel, #si_carousel{
 	max-width: 770px;
 	max-height: 1026px;
 }
@@ -58,14 +58,14 @@ body{
 	display: block;
 }
 
-#bandAuditionDescription, #wifiHeatMapDescription{
+#bandAuditionDescription, #wifiHeatMapDescription, #spaceInvadersDescription{
 	/*The text that describes the project depicted by the carousel*/
 	width: 95%;
 	margin-bottom: 20px;
 	display: block;
 }
 
-#bandAuditionCarousel, #wifiHeatMapCarousel{
+#bandAuditionCarousel, #wifiHeatMapCarousel, #si_carousel{
 	width: 95%;
 	display: block;
 	margin-left: auto;
@@ -96,14 +96,14 @@ body{
 		text-align: left;
 	}
 	
-	#bandAuditionDescription, #wifiHeatMapDescription{
+	#bandAuditionDescription, #wifiHeatMapDescription, #spaceInvadersDescription{
 		display: inline-block;
 		margin-right: 9%; /*10% pushes the carousel to a new line*/
 		width: 45%;
 		vertical-align: top;
 	}
 	
-	#bandAuditionCarousel, #wifiHeatMapCarousel{
+	#bandAuditionCarousel, #wifiHeatMapCarousel, #si_carousel{
 		display: inline-block;
 		width: 45%;
 	}
@@ -130,7 +130,7 @@ body{
 		margin: 0 2.2% 15px;
 	}
 	
-	#bandAuditionCarousel, #wifiHeatMapCarousel{
+	#bandAuditionCarousel, #wifiHeatMapCarousel, #si_carousel{
 		vertical-align: top;
 	}
 	
@@ -142,7 +142,7 @@ body{
 
 /*Extra large devices such as large desktop monitors (1200px and up)*/
 @media (min-width: 1200px){
-	#bandAuditionDescription, #wifiHeatMapDescription{
+	#bandAuditionDescription, #wifiHeatMapDescription, #spaceInvadersDescription{
 		vertical-align: top;
 		width: 51%;
 		margin-right: 3%;
